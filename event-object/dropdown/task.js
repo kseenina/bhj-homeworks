@@ -1,7 +1,7 @@
 document.querySelectorAll('.dropdown').forEach(dropdown => {
-    const dropdown__list = document.querySelector('.dropdown__list');
-    const dropdown__links = Array.from(document.querySelectorAll('.dropdown__link'));
-    const dropdown__value = document.querySelector('.dropdown__value');
+    const dropdown__list = dropdown.querySelector('.dropdown__list');
+    const dropdown__links = Array.from(dropdown.querySelectorAll('.dropdown__link'));
+    const dropdown__value = dropdown.querySelector('.dropdown__value');
 
     dropdown.addEventListener('click', () => {
         dropdown__list.classList.toggle('dropdown__list_active');
